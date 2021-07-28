@@ -4,7 +4,7 @@ pipeline {
     stage("build") {
       steps {
         echo "build the application"
-        powershell 'python --version'
+        bat python -m py-compile demo_jenkins.py
       }
     }
    stage("test") {
