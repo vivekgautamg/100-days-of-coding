@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        echo "build the application"
-        bat python -m py-compile demo_jenkins.py
+        echo "build the application
       }
     }
    stage("test") {
